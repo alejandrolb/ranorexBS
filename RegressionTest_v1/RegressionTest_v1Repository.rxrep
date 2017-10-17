@@ -1,0 +1,89 @@
+﻿<repository
+id="206f722a-400b-49cd-b138-3d768ce411db"
+name="RegressionTest_v1Repository"
+rxversion="7.1">
+	<codegen
+	classname="RegressionTest_v1Repository"
+	namespace="RegressionTest_v1">
+	</codegen>
+	<rootfolder
+	capname="unknown"
+	id="884d9529-5e9e-4eae-bbdb-1b98d9ece18a"
+	isrooted="True"
+	name="Root"
+	searchtimeout="0ms"
+	usecache="True">
+		<appfolder
+		addcaps="container,webdocument"
+		capname="webdocument"
+		id="be0234f2-9cd6-45e1-8197-580f1e1ad21e"
+		isrooted="True"
+		name="DashboardFinanceAndOperations"
+		refpath="/dom[8]"
+		searchtimeout="30000ms"
+		usecache="False">
+			<item
+			addcaps="unknown,webelement,atag"
+			capname="atag"
+			id="3d84d0b1-d05d-473f-8cf2-4f5ce3e06643"
+			name="GeneralLedger"
+			refimgid="7f4b46fb-f85b-45f3-aeff-4cc70f084915"
+			refpath="/dom[8]//div[#'mainPane']/div[3]/div/div/a[@innertext='General ledger']"
+			searchtimeout="30000ms">
+				/dom[8]//div[#'mainPane']/div[3]//a[@innertext='General ledger']
+			</item>
+			<item
+			addcaps="unknown,webelement,atag"
+			capname="atag"
+			id="7e76c4e3-ac3d-4e46-9630-a23934fb8fff"
+			name="GeneralJournals"
+			refimgid="0884b7f9-c04a-4883-9f71-808aad388a38"
+			refpath="/dom[8]//div[#'mainPane']/div[3]/div/div[2]/div/div/div[4]/a[@innertext='General journals']"
+			searchtimeout="30000ms">
+				/dom[8]//div[#'mainPane']/div[3]/div/div[2]/div/div/div[4]/a[@innertext='General journals']
+			</item>
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="spantag"
+			id="4d9d17a1-9a55-4266-9831-6f6a24b7a084"
+			name="ClickNewButton"
+			refimgid="d5162c3e-51eb-49d3-af0f-bb38d1f105b2"
+			refpath="/dom[@domain='bestseller-test01.sandbox.operations.dynamics.com' and @caption~'^General\ journals\ --\ Finan']//span[#'ledgerjournaltable3_2_SystemDefinedNewButton_label']"
+			searchtimeout="30000ms">
+				/dom[8]//span[#'ledgerjournaltable3_2_SystemDefinedNewButton_label']
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="65f9d71b-0610-4821-8a1e-244b454632ce"
+			name="ClickGeneratedLine"
+			refimgid="f48bfd40-6947-4f22-a77c-98581f7c460e"
+			refpath="/dom[@domain='bestseller-test01.sandbox.operations.dynamics.com' and @caption~'^General\ journals\ --\ Finan']//input[#'ledgerjournaltable3_2_LedgerJournalTable_JournalNum_input']"
+			searchtimeout="30000ms">
+				/dom[8]//input[#'ledgerjournaltable3_2_LedgerJournalTable_JournalNum_input']
+			</item>
+			<basepath>
+				/dom[8]
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAGHRFWHRTb2Z0d2FyZQBQYWlu
+dC5ORVQgdjMuMzE3g3eGAAACKklEQVQ4T43R20vTcRjHcS/6G4Kgyy6KKKjwJogIDBJjIBUt2YVD
+yoGVmWUWzozMC92YaWqeSE1s0dThOtjBWUlKkMxDudXU1lCU6XSepzu82+/nvNrX6APP1e95Xt/f
+9/vEbaWh7TO1xi4qmjspfWKhuLqN++VGtLqn5BTVk1lQRbRVHGn4X8nTNclYtD020smBYDjaHhsJ
+cIxPbY8YIr+9viEGgqGwDBxLvixXfGJaLCLdedUfCwRDyPDKWoiF5SAuT0AMSA+2BXhXZqmydFBu
+bkfbmkFpayPOyQW8CwHs7jUxIN1NOkEa1llLGA7bsYX7KbTd4GiuiUuVbxhyzTMwuiwGpFX5lkLU
+dFjJ+55Mw5yGGpsRtX6Kk2Ue9jWewtBRx9eRJTEg7XnWF+TBo25SzUmo3inINLjIKoPD1QXsbNvN
+6fxr9Az5xIDm9kOm5gLce+xEW/aF1BYlCmshSr2PMxm32HV3B8ez0/jQPycG1NklTMxsUGUaQaMD
+lc7EIcse4vXJJF18xX7FVUpq6njd5xUDKVeKcE2v4xib52bxIAdza9mbf4CE9OscUZo5q3nO295p
+zD0zYuBcegHOCb+8KpvDi6G5hRMX8klIKaei6b083PdjCdNHjxhQqO/gcPsj77CB27PO2OQa9j+r
+8tq+/VyODC/yaXBxeyBRlUPv8Dzt3eO86PrNs85Rml7+ot7soLrVTqVpsypMTjGQcD5L/vC/tTkV
+F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<basepath>
+		</basepath>
+	</rootfolder>
+	<variables>
+	</variables>
+</repository>
