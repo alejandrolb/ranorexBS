@@ -58,7 +58,7 @@ namespace RegressionTest_v1
         /// <summary>
         /// Starts the replay of the static recording <see cref="Instance"/>.
         /// </summary>
-        [System.CodeDom.Compiler.GeneratedCode("Ranorex", "7.1")]
+        [System.CodeDom.Compiler.GeneratedCode("Ranorex", "7.2")]
         public static void Start()
         {
             TestModuleRunner.Run(Instance);
@@ -70,7 +70,7 @@ namespace RegressionTest_v1
         /// <remarks>You should not call this method directly, instead pass the module
         /// instance to the <see cref="TestModuleRunner.Run(ITestModule)"/> method
         /// that will in turn invoke this method.</remarks>
-        [System.CodeDom.Compiler.GeneratedCode("Ranorex", "7.1")]
+        [System.CodeDom.Compiler.GeneratedCode("Ranorex", "7.2")]
         void ITestModule.Run()
         {
             Mouse.DefaultMoveTime = 300;
@@ -79,6 +79,21 @@ namespace RegressionTest_v1
 
             Init();
 
+            Report.Log(ReportLevel.Info, "Website", "Opening web site 'https://bestseller-test01.sandbox.operations.dynamics.com/' with browser 'Chrome' in normal mode.", new RecordItemIndex(0));
+            Host.Current.OpenBrowser("https://bestseller-test01.sandbox.operations.dynamics.com/", "Chrome", "", false, false, false, false, false);
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 10s.", new RecordItemIndex(1));
+            Delay.Duration(10000, false);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DashboardFinanceAndOperations.generalLedger' at 54;12.", repo.DashboardFinanceAndOperations.generalLedgerInfo, new RecordItemIndex(2));
+            repo.DashboardFinanceAndOperations.generalLedger.Click("54;12");
+            Delay.Milliseconds(200);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DashboardFinanceAndOperations.generalJournals' at 27;6.", repo.DashboardFinanceAndOperations.generalJournalsInfo, new RecordItemIndex(3));
+            repo.DashboardFinanceAndOperations.generalJournals.Click("27;6");
+            Delay.Milliseconds(200);
+            
         }
 
 #region Image Feature Data

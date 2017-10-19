@@ -1,8 +1,64 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <testsuitedoc
-rxversion="7.1">
+rxversion="7.2">
 	<testsuiteentryhierarchy>
 		<flatlistofchildren>
+			<testmodule
+			id="03557456-4e9d-4f76-8df2-bedda7ba5b4d"
+			name="ValidateLines_2"
+			ref="eddf4d9e-8607-4124-95a4-6d8ba60d67d3"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="costCenter2"
+					datasourceid="ea47fb33-328f-484a-aff8-ef8bbf3f6576"
+					variableid="1907b3d0-0157-417d-90f3-e450c9c1bdac"
+					variablename="tagCostCenter">
+					</var>
+					<var
+					dataname="Channel2"
+					datasourceid="ea47fb33-328f-484a-aff8-ef8bbf3f6576"
+					variableid="8da84c40-4d16-4f20-8a73-26756baf1507"
+					variablename="tagChannel">
+					</var>
+					<var
+					dataname="brandHouse2"
+					datasourceid="ea47fb33-328f-484a-aff8-ef8bbf3f6576"
+					variableid="5dda3c7a-f86d-4c42-ad06-6ca287c53a4f"
+					variablename="tagBrandHouse">
+					</var>
+					<var
+					dataname="brand2"
+					datasourceid="ea47fb33-328f-484a-aff8-ef8bbf3f6576"
+					variableid="b33be771-fafa-4cbd-b756-4a3704519b18"
+					variablename="tagBrand">
+					</var>
+					<var
+					dataname="subBrand2"
+					datasourceid="ea47fb33-328f-484a-aff8-ef8bbf3f6576"
+					variableid="7acdfe2e-df76-453e-843f-98202e7be211"
+					variablename="tagSubBrand">
+					</var>
+					<var
+					dataname="trandingMarket2"
+					datasourceid="ea47fb33-328f-484a-aff8-ef8bbf3f6576"
+					variableid="1b4119f4-fa8d-4a9a-b2c1-718f09cc4027"
+					variablename="tagTradinkMarket">
+					</var>
+					<var
+					dataname="functionalArea2"
+					datasourceid="ea47fb33-328f-484a-aff8-ef8bbf3f6576"
+					variableid="3e2d0892-f63f-4dd2-8c47-121991b17161"
+					variablename="tagFunctionalArea">
+					</var>
+					<var
+					dataname="mainAccount2"
+					datasourceid="ea47fb33-328f-484a-aff8-ef8bbf3f6576"
+					variableid="d27fc76c-1c48-4d94-8242-ac990f9c483e"
+					variablename="tagMainAccount">
+					</var>
+				</databinding>
+			</testmodule>
 			<testmodule
 			id="0f1002fe-78c5-4e7b-8c93-fb6dd9cdc2fb"
 			name="CreateNewLedger"
@@ -10,15 +66,123 @@ rxversion="7.1">
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="2039f5f9-ff4a-44dc-be1e-0d15e6a29092"
+			name="addDimensions_2"
+			ref="09cc4722-c84f-4974-ab8f-aa8ea893fc39"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="mainAccount2"
+					datasourceid="ea47fb33-328f-484a-aff8-ef8bbf3f6576"
+					variableid="b0d42443-58a6-4db6-9e74-9a8ed5dba93e"
+					variablename="mainAccount">
+					</var>
+					<var
+					dataname="costCenter2"
+					datasourceid="ea47fb33-328f-484a-aff8-ef8bbf3f6576"
+					variableid="cf98c502-7e65-4b01-9f7c-a3d0a58cec7a"
+					variablename="costCenter">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="2832dbcc-17be-47e7-a198-d537b08d7ba8"
+			name="validateLines2"
+			ref="e6cc56e6-3705-4965-a6b5-1d7847d7fc4d"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Channel"
+					datasourceid="ea47fb33-328f-484a-aff8-ef8bbf3f6576"
+					variableid="4620574e-041f-42b9-acc6-c1afee8437f1"
+					variablename="tagChannel">
+					</var>
+					<var
+					dataname="brandHouse"
+					datasourceid="ea47fb33-328f-484a-aff8-ef8bbf3f6576"
+					variableid="3f1a8a86-5cb2-4735-808e-ca50dde1f1a1"
+					variablename="tagBrandHouse">
+					</var>
+					<var
+					dataname="brand"
+					datasourceid="ea47fb33-328f-484a-aff8-ef8bbf3f6576"
+					variableid="11137edc-c841-4c67-89a6-6fe98842523d"
+					variablename="tagBrand">
+					</var>
+					<var
+					dataname="subBrand"
+					datasourceid="ea47fb33-328f-484a-aff8-ef8bbf3f6576"
+					variableid="b44b033b-2376-4034-99c4-b007e6455eb4"
+					variablename="tagSubBrand">
+					</var>
+					<var
+					dataname="trandingMarket"
+					datasourceid="ea47fb33-328f-484a-aff8-ef8bbf3f6576"
+					variableid="cace9fd9-01be-4fd4-b8d7-f2d9d0d9c67a"
+					variablename="tagTradinkMarket">
+					</var>
+					<var
+					dataname="functionalArea"
+					datasourceid="ea47fb33-328f-484a-aff8-ef8bbf3f6576"
+					variableid="9206a7bf-339d-421e-85c5-67b2664fbcbc"
+					variablename="tagFunctionalArea">
+					</var>
+					<var
+					dataname="costCenter"
+					datasourceid="ea47fb33-328f-484a-aff8-ef8bbf3f6576"
+					variableid="3df981f0-21db-46fd-8e9b-e162b8056a5c"
+					variablename="tagCostCenter">
+					</var>
+					<var
+					dataname="mainAccount"
+					datasourceid="ea47fb33-328f-484a-aff8-ef8bbf3f6576"
+					variableid="5e6e934a-9e13-4346-83a9-42a213e965bf"
+					variablename="tagMainAccount">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="3b4591ac-dabf-48fd-90e3-a1cabf243c49"
 			name="OpenLedgerModule"
 			ref="bec48827-64c3-45b2-ac7f-d3bcd0993a92"
 			type="Recording">
 			</testmodule>
+			<testmodule
+			id="47b3f6b5-63f3-4a52-a7d3-8791018290d2"
+			name="AddDimensions"
+			ref="d0ac7e44-f744-4ac0-b610-ce8dc8a3f10a"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="costCenter"
+					datasourceid="ea47fb33-328f-484a-aff8-ef8bbf3f6576"
+					variableid="1ede8a9f-7164-4b2a-ae8d-7b0a16438eb5"
+					variablename="costCenter">
+					</var>
+					<var
+					dataname="mainAccount"
+					datasourceid="ea47fb33-328f-484a-aff8-ef8bbf3f6576"
+					variableid="523dbe3a-1139-46a2-9382-ba2e1f417696"
+					variablename="mainAccount">
+					</var>
+				</databinding>
+			</testmodule>
 			<setup
 			id="4fe8a181-75c5-4648-a294-b253ccb5801d"
 			name="setup">
 			</setup>
+			<testmodule
+			id="551d0106-b011-4d1a-b461-f2e4ceb14457"
+			name="UserCodeModule1"
+			ref="7647514b-e02e-4480-beba-cc80f6cd154d"
+			type="UserCode">
+			</testmodule>
+			<testmodule
+			id="5b15e9ce-3f8b-46ae-8dd7-d7d7005f8a50"
+			name="firstLineLeger_2"
+			ref="493aee77-5f10-40f7-bfdb-879c507c9f78"
+			type="Recording">
+			</testmodule>
 			<testcase
 			id="62e65eb7-7d5d-418c-9b42-4eb63cf23d3c"
 			name="RegressionTest_v1"
@@ -35,8 +199,13 @@ rxversion="7.1">
 			reportcompress="False"
 			reportfilename="%S_%Y%M%D_%T.rxlog"
 			reporttemplatefolder=""
-			reportwriteinterval="30000ms">
+			reportwriteinterval="30000ms"
+			showinvisiblechars="True">
 			</testsuite>
+			<teardown
+			id="8b2795df-7755-491d-b60b-23266d63c6b3"
+			name="teardown">
+			</teardown>
 			<testmodule
 			id="8fcd17d9-9262-400c-8ba3-d83affeaa2da"
 			name="OpenBrowser"
@@ -44,14 +213,33 @@ rxversion="7.1">
 			type="Recording">
 			</testmodule>
 			<testmodule
-			id="9ce72fdf-2e34-4bf0-9385-06107ef70c83"
-			name="Recording1"
-			ref="c2e447fd-fe20-4ee0-bfa8-d91406565507"
+			id="918586ff-6da5-436f-a19b-04d5524799bd"
+			name="firstLineLedger"
+			ref="72d17a78-b74f-46d7-9e25-9cf73aecb329"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="9ab51321-9903-4a4c-8f4e-36093c6bd9cb"
+			name="closeSUT"
+			ref="7f8eb0d9-8bad-4d27-b9f2-8eb8ec56f300"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="9fb7b8b6-7002-4aa7-8f02-794484c592d5"
+			name="addNewLine"
+			ref="4e936a88-2144-4fbf-87cb-e4b4e6a4ba84"
 			type="Recording">
 			</testmodule>
 			<testcase
+			datasource="DimensionsCSV"
 			id="abc2a26a-622a-42c9-a38a-23168aad9448"
-			name="TestCase">
+			name="DimensionTC01_TC28084">
+				<parameters>
+					<param
+					name="NewParameter"
+					value="">
+					</param>
+				</parameters>
 			</testcase>
 		</flatlistofchildren>
 		<childhierarchy>
@@ -69,6 +257,10 @@ rxversion="7.1">
 						name="OpenBrowser">
 						</testmodule>
 						<testmodule
+						id="551d0106-b011-4d1a-b461-f2e4ceb14457"
+						name="UserCodeModule1">
+						</testmodule>
+						<testmodule
 						id="3b4591ac-dabf-48fd-90e3-a1cabf243c49"
 						name="OpenLedgerModule">
 						</testmodule>
@@ -79,17 +271,151 @@ rxversion="7.1">
 					</setup>
 					<testcase
 					id="abc2a26a-622a-42c9-a38a-23168aad9448"
-					name="TestCase">
+					name="DimensionTC01_TC28084">
 						<testmodule
-						id="9ce72fdf-2e34-4bf0-9385-06107ef70c83"
-						name="Recording1">
+						id="918586ff-6da5-436f-a19b-04d5524799bd"
+						name="firstLineLedger">
+						</testmodule>
+						<testmodule
+						id="47b3f6b5-63f3-4a52-a7d3-8791018290d2"
+						name="AddDimensions">
+						</testmodule>
+						<testmodule
+						id="2832dbcc-17be-47e7-a198-d537b08d7ba8"
+						name="validateLines2">
+						</testmodule>
+						<testmodule
+						id="9fb7b8b6-7002-4aa7-8f02-794484c592d5"
+						name="addNewLine">
+						</testmodule>
+						<testmodule
+						id="5b15e9ce-3f8b-46ae-8dd7-d7d7005f8a50"
+						name="firstLineLeger_2">
+						</testmodule>
+						<testmodule
+						id="2039f5f9-ff4a-44dc-be1e-0d15e6a29092"
+						name="addDimensions_2">
+						</testmodule>
+						<testmodule
+						id="03557456-4e9d-4f76-8df2-bedda7ba5b4d"
+						name="ValidateLines_2">
 						</testmodule>
 					</testcase>
+					<teardown
+					id="8b2795df-7755-491d-b60b-23266d63c6b3"
+					name="teardown">
+						<testmodule
+						id="9ab51321-9903-4a4c-8f4e-36093c6bd9cb"
+						name="closeSUT">
+						</testmodule>
+					</teardown>
 				</testcase>
 			</testsuite>
 		</childhierarchy>
 	</testsuiteentryhierarchy>
 	<datasources>
+		<DataSource
+		id="35dec339-5d5e-44b5-8fb0-027cd21f47a9"
+		includefile="Unchecked"
+		lastknownrowcount="1"
+		name="DimensionCSV_ledger2"
+		type="Ranorex.Core.Data.CsvDataConnector"
+		withheaders="True">
+			<lastknowncolumns>
+				<column>
+					mainAccount
+				</column>
+				<column>
+					costCenter
+				</column>
+				<column>
+					Channel
+				</column>
+				<column>
+					brandHouse
+				</column>
+				<column>
+					brand
+				</column>
+				<column>
+					subBrand
+				</column>
+				<column>
+					trandingMarket
+				</column>
+				<column>
+					functionalArea
+				</column>
+			</lastknowncolumns>
+			<maskedcolumns>
+			</maskedcolumns>
+			<file>
+				C:\Users\Alejandro.leal\Documents\Ranorex\RanorexStudio Projects\RegressionTest_v1\RegressionTest_v1\dataCSV\dimensionsTC01_2ledger.csv
+			</file>
+		</DataSource>
+		<DataSource
+		id="ea47fb33-328f-484a-aff8-ef8bbf3f6576"
+		includefile="Unchecked"
+		lastknownrowcount="1"
+		name="DimensionsCSV"
+		type="Ranorex.Core.Data.CsvDataConnector"
+		withheaders="True">
+			<lastknowncolumns>
+				<column>
+					mainAccount
+				</column>
+				<column>
+					costCenter
+				</column>
+				<column>
+					Channel
+				</column>
+				<column>
+					brandHouse
+				</column>
+				<column>
+					brand
+				</column>
+				<column>
+					subBrand
+				</column>
+				<column>
+					trandingMarket
+				</column>
+				<column>
+					functionalArea
+				</column>
+				<column>
+					mainAccount2
+				</column>
+				<column>
+					costCenter2
+				</column>
+				<column>
+					Channel2
+				</column>
+				<column>
+					brandHouse2
+				</column>
+				<column>
+					brand2
+				</column>
+				<column>
+					subBrand2
+				</column>
+				<column>
+					trandingMarket2
+				</column>
+				<column>
+					functionalArea2
+				</column>
+			</lastknowncolumns>
+			<maskedcolumns>
+			</maskedcolumns>
+			<file>
+				C:\Users\Alejandro.leal\Documents\Ranorex\RanorexStudio Projects\RegressionTest_v1\RegressionTest_v1\dataCSV\dimensionsTC01.csv
+			</file>
+		</DataSource>
 	</datasources>
 	<testconfigurations
 	default="TestRun">

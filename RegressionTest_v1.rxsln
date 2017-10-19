@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-# Ranorex Studio 7.1
+# Ranorex Studio 7.2
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E56D9CD9-0D68-40D9-94A3-D99BEE34772B}"
 	ProjectSection(SolutionItems) = postProject
 		Ranorex = .\Ranorex.rxsettings

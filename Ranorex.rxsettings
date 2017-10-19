@@ -1,5 +1,5 @@
 ﻿<configuration
-rxversion="7.1">
+rxversion="7.2">
 	<adapter.defaultsearchtimeout>
 		10000ms
 	</adapter.defaultsearchtimeout>
@@ -372,6 +372,18 @@ rxversion="7.1">
 	</plugins.rawtext.whitelist>
 	<Endpoints.Data>
 	</Endpoints.Data>
+	<TestCase.Retry.Count>
+		0
+	</TestCase.Retry.Count>
+	<TestCase.Retry.IncludeSmartFolder>
+		True
+	</TestCase.Retry.IncludeSmartFolder>
+	<TestCase.Retry.IncludeTestCase>
+		True
+	</TestCase.Retry.IncludeTestCase>
+	<TestCase.Retry.ShowWarning>
+		True
+	</TestCase.Retry.ShowWarning>
 	<plugins.win32.EnableBasicDelphiSupport>
 		True
 	</plugins.win32.EnableBasicDelphiSupport>

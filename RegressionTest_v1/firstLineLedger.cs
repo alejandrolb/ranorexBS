@@ -24,29 +24,29 @@ namespace RegressionTest_v1
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The OpenLedgerModule recording.
+    ///The firstLineLedger recording.
     /// </summary>
-    [TestModule("bec48827-64c3-45b2-ac7f-d3bcd0993a92", ModuleType.Recording, 1)]
-    public partial class OpenLedgerModule : ITestModule
+    [TestModule("72d17a78-b74f-46d7-9e25-9cf73aecb329", ModuleType.Recording, 1)]
+    public partial class firstLineLedger : ITestModule
     {
         /// <summary>
         /// Holds an instance of the RegressionTest_v1Repository repository.
         /// </summary>
         public static RegressionTest_v1Repository repo = RegressionTest_v1Repository.Instance;
 
-        static OpenLedgerModule instance = new OpenLedgerModule();
+        static firstLineLedger instance = new firstLineLedger();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public OpenLedgerModule()
+        public firstLineLedger()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static OpenLedgerModule Instance
+        public static firstLineLedger Instance
         {
             get { return instance; }
         }
@@ -79,16 +79,17 @@ namespace RegressionTest_v1
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 10s.", new RecordItemIndex(0));
-            Delay.Duration(10000, false);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(0));
+            Delay.Duration(5000, false);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DashboardFinanceAndOperations.generalLedger' at Center.", repo.DashboardFinanceAndOperations.generalLedgerInfo, new RecordItemIndex(1));
-            repo.DashboardFinanceAndOperations.generalLedger.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DashboardFinanceAndOperations.clickAccount' at Center.", repo.DashboardFinanceAndOperations.clickAccountInfo, new RecordItemIndex(1));
+            repo.DashboardFinanceAndOperations.clickAccount.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DashboardFinanceAndOperations.generalJournals' at Center.", repo.DashboardFinanceAndOperations.generalJournalsInfo, new RecordItemIndex(2));
-            repo.DashboardFinanceAndOperations.generalJournals.Click();
-            Delay.Milliseconds(200);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Alt+Down' Press with focus on 'DashboardFinanceAndOperations.clickAccount'.", repo.DashboardFinanceAndOperations.clickAccountInfo, new RecordItemIndex(2));
+            Keyboard.PrepareFocus(repo.DashboardFinanceAndOperations.clickAccount);
+            Keyboard.Press(System.Windows.Forms.Keys.Down | System.Windows.Forms.Keys.Alt, 80, Keyboard.DefaultKeyPressTime, 1, true);
+            Delay.Milliseconds(0);
             
         }
 

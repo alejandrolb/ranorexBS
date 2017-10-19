@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="4e936a88-2144-4fbf-87cb-e4b4e6a4ba84"
+mode="Global"
+rxversion="7.2">
+	<name>
+		addNewLine
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="addNewLine"
+	namespace="RegressionTest_v1">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<explicitdelayitem
+		duration="5000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="31afb7dc-3231-45b1-91d9-9b02d8275c43"
+		sx="2261"
+		sy="378"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="c41068b9-f80d-448c-b904-45e410ea3df6"
+			sourcename="Recorder">
+				<element
+				capabilities="webelement, spantag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="1"
+				prefcap="spantag"
+				rect="2238,364,34,27"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						button-label
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="id"
+					type="System.String">
+						LedgerJournalTransDaily_4_NewLine_label
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						New
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						span
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="data-dyn-bind"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="for"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain='bestseller-test01.sandbox.operations.dynamics.com']//span[#'LedgerJournalTransDaily_4_NewLine_label']
+				</path>
+			</info>
+			<helperscreenshot
+			guid="8a6cdc31-f2ad-4cb5-af4b-fab06f116c61">
+				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
+igAooooAKKKKAP/Z
+			</helperscreenshot>
+		</mouseitem>
+	</recorditems>
+	<repository
+	id="206f722a-400b-49cd-b138-3d768ce411db"
+	name="RegressionTest_v1Repository"
+	relativepath="RegressionTest_v1Repository.rxrep"
+	rxversion="7.2">
+		<codegen
+		classname="RegressionTest_v1Repository"
+		namespace="RegressionTest_v1">
+		</codegen>
+		<rootfolder
+		id="884d9529-5e9e-4eae-bbdb-1b98d9ece18a"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		addNewLine.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

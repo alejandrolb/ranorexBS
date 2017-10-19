@@ -24,34 +24,58 @@ namespace RegressionTest_v1
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The OpenLedgerModule recording.
+    ///The validateLines recording.
     /// </summary>
-    [TestModule("bec48827-64c3-45b2-ac7f-d3bcd0993a92", ModuleType.Recording, 1)]
-    public partial class OpenLedgerModule : ITestModule
+    [TestModule("8a41319c-4881-4d16-8407-2ef3bd9b88eb", ModuleType.Recording, 1)]
+    public partial class validateLines : ITestModule
     {
         /// <summary>
         /// Holds an instance of the RegressionTest_v1Repository repository.
         /// </summary>
         public static RegressionTest_v1Repository repo = RegressionTest_v1Repository.Instance;
 
-        static OpenLedgerModule instance = new OpenLedgerModule();
+        static validateLines instance = new validateLines();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public OpenLedgerModule()
+        public validateLines()
         {
+            channel = "10";
+            tagMainAccount = "511151000";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static OpenLedgerModule Instance
+        public static validateLines Instance
         {
             get { return instance; }
         }
 
 #region Variables
+
+        string _channel;
+
+        /// <summary>
+        /// Gets or sets the value of variable channel.
+        /// </summary>
+        [TestVariable("d3fc8bdf-0fcf-4409-8e18-68975b49c54b")]
+        public string channel
+        {
+            get { return _channel; }
+            set { _channel = value; }
+        }
+
+        /// <summary>
+        /// Gets or sets the value of variable tagMainAccount.
+        /// </summary>
+        [TestVariable("10973c08-5f6a-4440-afcc-da36a9e7f05f")]
+        public string tagMainAccount
+        {
+            get { return repo.tagMainAccount; }
+            set { repo.tagMainAccount = value; }
+        }
 
 #endregion
 
@@ -79,17 +103,6 @@ namespace RegressionTest_v1
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 10s.", new RecordItemIndex(0));
-            Delay.Duration(10000, false);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DashboardFinanceAndOperations.generalLedger' at Center.", repo.DashboardFinanceAndOperations.generalLedgerInfo, new RecordItemIndex(1));
-            repo.DashboardFinanceAndOperations.generalLedger.Click();
-            Delay.Milliseconds(200);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DashboardFinanceAndOperations.generalJournals' at Center.", repo.DashboardFinanceAndOperations.generalJournalsInfo, new RecordItemIndex(2));
-            repo.DashboardFinanceAndOperations.generalJournals.Click();
-            Delay.Milliseconds(200);
-            
         }
 
 #region Image Feature Data

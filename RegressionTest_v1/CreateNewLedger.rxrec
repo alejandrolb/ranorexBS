@@ -3,7 +3,7 @@
 embeddedrepository="False"
 id="53d3181a-15c6-4234-89a0-efed7c59252b"
 mode="Global"
-rxversion="7.1">
+rxversion="7.2">
 	<name>
 		CreateNewLedger
 	</name>
@@ -29,6 +29,15 @@ rxversion="7.1">
 	<variables>
 	</variables>
 	<recorditems>
+		<explicitdelayitem
+		duration="5000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
 		<mouseitem
 		action="Click"
 		button="Left"
@@ -563,7 +572,7 @@ iigAooooAKKKKACiiigD/9k=
 	id="206f722a-400b-49cd-b138-3d768ce411db"
 	name="RegressionTest_v1Repository"
 	relativepath="RegressionTest_v1Repository.rxrep"
-	rxversion="7.1">
+	rxversion="7.2">
 		<codegen
 		classname="RegressionTest_v1Repository"
 		namespace="RegressionTest_v1">

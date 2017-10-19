@@ -24,34 +24,60 @@ namespace RegressionTest_v1
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The CreateNewLedger recording.
+    ///The addDimensions_2 recording.
     /// </summary>
-    [TestModule("53d3181a-15c6-4234-89a0-efed7c59252b", ModuleType.Recording, 1)]
-    public partial class CreateNewLedger : ITestModule
+    [TestModule("09cc4722-c84f-4974-ab8f-aa8ea893fc39", ModuleType.Recording, 1)]
+    public partial class addDimensions_2 : ITestModule
     {
         /// <summary>
         /// Holds an instance of the RegressionTest_v1Repository repository.
         /// </summary>
         public static RegressionTest_v1Repository repo = RegressionTest_v1Repository.Instance;
 
-        static CreateNewLedger instance = new CreateNewLedger();
+        static addDimensions_2 instance = new addDimensions_2();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public CreateNewLedger()
+        public addDimensions_2()
         {
+            mainAccount = "511151000";
+            costCenter = "2050600010";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static CreateNewLedger Instance
+        public static addDimensions_2 Instance
         {
             get { return instance; }
         }
 
 #region Variables
+
+        string _mainAccount;
+
+        /// <summary>
+        /// Gets or sets the value of variable mainAccount.
+        /// </summary>
+        [TestVariable("b0d42443-58a6-4db6-9e74-9a8ed5dba93e")]
+        public string mainAccount
+        {
+            get { return _mainAccount; }
+            set { _mainAccount = value; }
+        }
+
+        string _costCenter;
+
+        /// <summary>
+        /// Gets or sets the value of variable costCenter.
+        /// </summary>
+        [TestVariable("cf98c502-7e65-4b01-9f7c-a3d0a58cec7a")]
+        public string costCenter
+        {
+            get { return _costCenter; }
+            set { _costCenter = value; }
+        }
 
 #endregion
 
@@ -82,17 +108,28 @@ namespace RegressionTest_v1
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(0));
             Delay.Duration(5000, false);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DashboardFinanceAndOperations.clickNewButton' at Center.", repo.DashboardFinanceAndOperations.clickNewButtonInfo, new RecordItemIndex(1));
-            repo.DashboardFinanceAndOperations.clickNewButton.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DimensionFields.ClickMainAccount' at Center.", repo.DimensionFields.ClickMainAccountInfo, new RecordItemIndex(1));
+            repo.DimensionFields.ClickMainAccount.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{RShiftKey down}D{RShiftKey up}aily'.", new RecordItemIndex(2));
-            Keyboard.Press("{RShiftKey down}D{RShiftKey up}aily");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$mainAccount'.", new RecordItemIndex(2));
+            Keyboard.Press(mainAccount);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DashboardFinanceAndOperations.clickGeneratedLine' at Center.", repo.DashboardFinanceAndOperations.clickGeneratedLineInfo, new RecordItemIndex(3));
-            repo.DashboardFinanceAndOperations.clickGeneratedLine.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DimensionFields.clickCostCenter' at 16;11.", repo.DimensionFields.clickCostCenterInfo, new RecordItemIndex(3));
+            repo.DimensionFields.clickCostCenter.Click("16;11");
             Delay.Milliseconds(200);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$costCenter'.", new RecordItemIndex(4));
+            Keyboard.Press(costCenter);
+            Delay.Milliseconds(100);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{LMenu down}{LMenu up}{Tab}'.", new RecordItemIndex(5));
+            Keyboard.Press("{LMenu down}{LMenu up}{Tab}");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 3ms.", new RecordItemIndex(6));
+            Delay.Duration(3, false);
             
         }
 

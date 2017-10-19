@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="7f8eb0d9-8bad-4d27-b9f2-8eb8ec56f300"
+mode="Global"
+rxversion="7.2">
+	<name>
+		closeSUT
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="closeSUT"
+	namespace="RegressionTest_v1">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="1000ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="9de24d1f-3ff6-40c1-b15e-0a407d453f8a">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="a08dec6f-3568-4b7e-b999-635b40c7d3e1"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="accessible"
+				dontcache="False"
+				enabled="True"
+				flavor="msaa"
+				hasfocus="False"
+				index="1"
+				prefcap="container"
+				rect="0,0,0,0"
+				role="container"
+				snapElem=""
+				valid="False"
+				visible="False">
+					<attribute
+					name="accessiblerole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						None
+					</attribute>
+					<attribute
+					name="accessiblestate"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						None
+					</attribute>
+				</element>
+				<path>
+					/form[@title='New Tab - Google Chrome']/container[@accessiblename='Google Chrome']/container[2]/container[2]
+				</path>
+			</info>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="206f722a-400b-49cd-b138-3d768ce411db"
+	name="RegressionTest_v1Repository"
+	relativepath="RegressionTest_v1Repository.rxrep"
+	rxversion="7.2">
+		<codegen
+		classname="RegressionTest_v1Repository"
+		namespace="RegressionTest_v1">
+		</codegen>
+		<rootfolder
+		id="884d9529-5e9e-4eae-bbdb-1b98d9ece18a"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		closeSUT.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

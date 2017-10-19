@@ -1,7 +1,7 @@
 ﻿<repository
 id="206f722a-400b-49cd-b138-3d768ce411db"
 name="RegressionTest_v1Repository"
-rxversion="7.1">
+rxversion="7.2">
 	<codegen
 	classname="RegressionTest_v1Repository"
 	namespace="RegressionTest_v1">
@@ -19,51 +19,74 @@ rxversion="7.1">
 		id="be0234f2-9cd6-45e1-8197-580f1e1ad21e"
 		isrooted="True"
 		name="DashboardFinanceAndOperations"
-		refpath="/dom[8]"
+		refimgid="ccb7406a-a2b6-4829-8717-cb225d03b6c0"
 		searchtimeout="30000ms"
 		usecache="False">
 			<item
 			addcaps="unknown,webelement,atag"
 			capname="atag"
 			id="3d84d0b1-d05d-473f-8cf2-4f5ce3e06643"
-			name="GeneralLedger"
+			name="generalLedger"
 			refimgid="7f4b46fb-f85b-45f3-aeff-4cc70f084915"
-			refpath="/dom[8]//div[#'mainPane']/div[3]/div/div/a[@innertext='General ledger']"
 			searchtimeout="30000ms">
-				/dom[8]//div[#'mainPane']/div[3]//a[@innertext='General ledger']
+				/dom[@domain='bestseller-test01.sandbox.operations.dynamics.com']//div[#'mainPane']/div[3]//a[@innertext='General ledger']
 			</item>
 			<item
 			addcaps="unknown,webelement,atag"
 			capname="atag"
 			id="7e76c4e3-ac3d-4e46-9630-a23934fb8fff"
-			name="GeneralJournals"
+			name="generalJournals"
 			refimgid="0884b7f9-c04a-4883-9f71-808aad388a38"
-			refpath="/dom[8]//div[#'mainPane']/div[3]/div/div[2]/div/div/div[4]/a[@innertext='General journals']"
 			searchtimeout="30000ms">
-				/dom[8]//div[#'mainPane']/div[3]/div/div[2]/div/div/div[4]/a[@innertext='General journals']
+				/dom[@domain='bestseller-test01.sandbox.operations.dynamics.com']//div[#'mainPane']/div[3]/div/div[2]/div/div/div[4]/a[@innertext='General journals']
 			</item>
 			<item
 			addcaps="unknown,webelement,spantag"
 			capname="spantag"
 			id="4d9d17a1-9a55-4266-9831-6f6a24b7a084"
-			name="ClickNewButton"
+			name="clickNewButton"
 			refimgid="d5162c3e-51eb-49d3-af0f-bb38d1f105b2"
-			refpath="/dom[@domain='bestseller-test01.sandbox.operations.dynamics.com' and @caption~'^General\ journals\ --\ Finan']//span[#'ledgerjournaltable3_2_SystemDefinedNewButton_label']"
 			searchtimeout="30000ms">
-				/dom[8]//span[#'ledgerjournaltable3_2_SystemDefinedNewButton_label']
+				/dom[@domain='bestseller-test01.sandbox.operations.dynamics.com']//span[@id~'SystemDefinedNewButton_label']
 			</item>
 			<item
 			addcaps="unknown,webelement,inputtag"
 			capname="inputtag"
 			id="65f9d71b-0610-4821-8a1e-244b454632ce"
-			name="ClickGeneratedLine"
+			name="clickGeneratedLine"
 			refimgid="f48bfd40-6947-4f22-a77c-98581f7c460e"
-			refpath="/dom[@domain='bestseller-test01.sandbox.operations.dynamics.com' and @caption~'^General\ journals\ --\ Finan']//input[#'ledgerjournaltable3_2_LedgerJournalTable_JournalNum_input']"
 			searchtimeout="30000ms">
-				/dom[8]//input[#'ledgerjournaltable3_2_LedgerJournalTable_JournalNum_input']
+				/dom[@domain='bestseller-test01.sandbox.operations.dynamics.com']//input[@id~'LedgerJournalTable_JournalNum_input']
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="4371e9c6-39ae-4c8e-9c5a-615c44433b35"
+			name="clickAccount"
+			refimgid="93aecaca-0ed3-4602-9532-792e7d58ee17"
+			searchtimeout="30000ms">
+				/dom[@domain='bestseller-test01.sandbox.operations.dynamics.com']//input[@id~'LedgerJournalTrans_AccountNum_input']
+			</item>
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="spantag"
+			id="c41068b9-f80d-448c-b904-45e410ea3df6"
+			name="addNewLine"
+			refimgid="78d14ae7-dca0-4f9a-8cdc-cf8691d068e3"
+			searchtimeout="30000ms">
+				/dom[@domain='bestseller-test01.sandbox.operations.dynamics.com']//span[@id~'NewLine_label']
+			</item>
+			<item
+			addcaps="unknown,webelement,divtag"
+			capname="divtag"
+			id="dbac73c6-5e1e-4d98-b227-7f62682a04fe"
+			name="LookupButton"
+			refimgid="4a61b876-6395-4b5d-81e7-6f4aa35b1389"
+			searchtimeout="30000ms">
+				/dom[@domain='bestseller-test01.sandbox.operations.dynamics.com']//div[@id~'LedgerJournalTrans_AccountNum']/?/?/div
 			</item>
 			<basepath>
-				/dom[8]
+				/dom[@domain='bestseller-test01.sandbox.operations.dynamics.com']
 			</basepath>
 			<icon>
 				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
@@ -81,9 +104,238 @@ zD0zYuBcegHOCb+8KpvDi6G5hRMX8klIKaei6b083PdjCdNHjxhQqO/gcPsj77CB27PO2OQa9j+r
 F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 			</icon>
 		</appfolder>
+		<folder
+		capname="unknown"
+		id="25ac1ebc-c6e6-4845-8f4e-e39f46fa57bf"
+		isrooted="False"
+		name="DimensionFields"
+		searchtimeout="0ms">
+			<item
+			addcaps="unknown,webelement,labeltag"
+			capname="labeltag"
+			id="a43229fa-d93e-47cc-9441-91e39c5fe8ab"
+			name="ClickMainAccount"
+			refimgid="e06c9c0c-ff34-48ff-a476-9dcbd27300f0"
+			searchtimeout="30000ms">
+				/dom[@domain='bestseller-test01.sandbox.operations.dynamics.com']//label[@innertext='MainAccount']
+			</item>
+			<item
+			addcaps="unknown,webelement,labeltag"
+			capname="labeltag"
+			id="825812c8-473b-45e1-a730-8f240893b18b"
+			name="clickCostCenter"
+			refimgid="a26a9d23-d75e-4f1e-9e62-528506e94074"
+			searchtimeout="30000ms">
+				/dom[@domain='bestseller-test01.sandbox.operations.dynamics.com']//label[@innertext='CostCenter']
+			</item>
+			<item
+			addcaps="unknown,webelement,labeltag"
+			capname="labeltag"
+			id="9c6e4ddd-1d3e-444f-af62-7e967807cbee"
+			name="clickChannel"
+			refimgid="6573205b-70e1-41f9-a826-8ef62b086b47"
+			searchtimeout="30000ms">
+				/dom[@domain='bestseller-test01.sandbox.operations.dynamics.com']//label[@innertext='Channel']
+			</item>
+			<item
+			addcaps="unknown,webelement,labeltag"
+			capname="labeltag"
+			id="cc69c8d0-2d63-4f2f-8382-72631682e6dc"
+			name="clickBrandHouse"
+			refimgid="1c67328a-bebc-40d5-a4be-a3203ad430f3"
+			searchtimeout="30000ms">
+				/dom[@domain='bestseller-test01.sandbox.operations.dynamics.com']//label[@innertext='BrandHouse']
+			</item>
+			<item
+			addcaps="unknown,webelement,labeltag"
+			capname="labeltag"
+			id="2b89408a-06a3-4566-929c-0a6bcf891819"
+			name="clickBrand"
+			refimgid="26129b24-cc31-4914-9a1a-cd2b61946243"
+			searchtimeout="30000ms">
+				/dom[@domain='bestseller-test01.sandbox.operations.dynamics.com']//label[@innertext='Brand']
+			</item>
+			<item
+			addcaps="unknown,webelement,labeltag"
+			capname="labeltag"
+			id="9b398ef6-40c8-43e4-bb01-bba8c702b093"
+			name="clickSubBrand"
+			refimgid="87d1c68f-a73f-45d5-bed0-c130b268eb5b"
+			searchtimeout="30000ms">
+				/dom[@domain='bestseller-test01.sandbox.operations.dynamics.com']//label[@innertext='SubBrand']
+			</item>
+			<item
+			addcaps="unknown,webelement,labeltag"
+			capname="labeltag"
+			id="1afce465-d3da-4305-9fbf-9b37c4b4b306"
+			name="clickTradingMarket"
+			refimgid="1875d6a1-e158-4f1b-aa14-3505413f03c3"
+			searchtimeout="30000ms">
+				/dom[@domain='bestseller-test01.sandbox.operations.dynamics.com']//label[@innertext='TradingMarket']
+			</item>
+			<item
+			addcaps="unknown,webelement,labeltag"
+			capname="labeltag"
+			id="2ced6698-d230-4773-a589-be6aac098549"
+			name="clickFunctionalArea"
+			refimgid="45a4205c-1c28-4ee4-b305-136375ceb866"
+			searchtimeout="30000ms">
+				/dom[@domain='bestseller-test01.sandbox.operations.dynamics.com']//label[@innertext='FunctionalArea']
+			</item>
+		</folder>
+		<folder
+		capname="unknown"
+		id="c5d33967-fe53-46da-ae05-bda2c7ae8bbc"
+		isrooted="False"
+		name="DimensionTags"
+		searchtimeout="0ms">
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="22e6ce27-bd56-42f9-80b0-b77b2084e6ca"
+			name="tagMainAccount"
+			refimgid="072dcafe-e8bd-4da5-a896-0fb7a6f87dd8"
+			searchtimeout="30000ms">
+				/dom[@domain='bestseller-test01.sandbox.operations.dynamics.com']//input[@tagvalue=$tagMainAccount]
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="03439e6d-6579-4ef7-a1ce-9f8a53d416dd"
+			name="tagCostCenter"
+			refimgid="a06f007d-dc3b-4985-97a5-e8f1aadf8616"
+			searchtimeout="30000ms">
+				/dom[@domain='bestseller-test01.sandbox.operations.dynamics.com']//input[@tagvalue=$tagCostCenter]
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="9e987755-92a3-4c99-bf52-b98f3b7b4faa"
+			name="tagChannel"
+			refimgid="8f09f5ee-86b3-48e9-8b1c-97b704aec1c3"
+			searchtimeout="30000ms">
+				/dom[@domain='bestseller-test01.sandbox.operations.dynamics.com']//input[@tagvalue=$tagChannel]
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="32e08f68-7924-49e2-96c8-a96fbd85d0bb"
+			name="tagBrandHouse"
+			refimgid="38dc6046-cb6e-4863-946e-e6ad6828b551"
+			searchtimeout="30000ms">
+				/dom[@domain='bestseller-test01.sandbox.operations.dynamics.com']//input[@tagvalue=$tagBrandHouse]
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="ec68672a-7298-4f8b-8ce8-01cfbecb1412"
+			name="tagBrand"
+			refimgid="9580ffc4-0a18-4116-be78-f56aaff4b298"
+			searchtimeout="30000ms">
+				/dom[@domain='bestseller-test01.sandbox.operations.dynamics.com']//input[@tagvalue=$tagBrand]
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="978bdb6f-c3e0-4a09-90f3-1a63d2c96a06"
+			name="tagSubBrand"
+			refimgid="56fe87e1-76b1-46b6-90f0-3cae32baa375"
+			searchtimeout="30000ms">
+				/dom[@domain='bestseller-test01.sandbox.operations.dynamics.com']//input[@tagvalue=$tagSubBrand]
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="fa647514-f4bc-4c6b-8909-72e44be88582"
+			name="tagTradingMarket"
+			refimgid="42dc7ffd-7d75-46e8-a7f6-8c8c361f4b7d"
+			searchtimeout="30000ms">
+				/dom[@domain='bestseller-test01.sandbox.operations.dynamics.com']//input[@tagvalue=$tagTradinkMarket]
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="b525f02b-c0a5-48e6-9fe6-361f4727ce35"
+			name="tagFunctionalArea"
+			refimgid="9effa61e-a0c0-4679-9cfb-c4cd7b3fc042"
+			searchtimeout="30000ms">
+				/dom[@domain='bestseller-test01.sandbox.operations.dynamics.com']//input[@tagvalue=$tagFunctionalArea]
+			</item>
+		</folder>
+		<appfolder
+		addcaps="form,nativewindow"
+		capname="form"
+		id="c503158c-079e-414f-9740-302f336719a1"
+		isrooted="True"
+		name="GoogleChromeClosed"
+		refpath="/form[@title='New Tab - Google Chrome']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="container,accessible"
+			capname="container"
+			id="a08dec6f-3568-4b7e-b999-635b40c7d3e1"
+			name="Client"
+			refimgid="add4ecd7-a9fb-44d2-b828-cedc6aa4797b"
+			refpath="/form[@title='New Tab - Google Chrome']/container/container[2]/container[2]"
+			searchtimeout="30000ms">
+				/form[@title='New Tab - Google Chrome']/container[@accessiblename='Google Chrome']/container[2]/container[2]
+			</item>
+			<basepath>
+				/form[@title='New Tab - Google Chrome']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAKFSURBVDhPrZJdSFNhHMaXQUFEBaZTZiV1EUQX
+FkRJ6c6m07lvdVPYlujSuygSlOiiEYSQfd10sZp2nFtiu7GPmyBtaoua86smltNzLKQIhGB5BurG
+eXrPOpqjj6se+PHe/H/P/+Xllfz3wCnJmDdrK5lazT3WrB5gK1XDbFWZn5znpk0lmeLYnzNjURWw
+NuMUEcFWl4NIYEylYIwlYAwKsCZljDGVOcTx9AyqC49EqlXfZ81EXCuoKksrYPQU5nQKzBmo86Im
+xunMuHDRvBDWyzEtCH+5AaMjBVo5ZrXFyXmNvEC0JZIDPU2Go676ZK+hCG/Jlg9k86duN16OLPDP
+wos8M/Ec8z4jvnhO4FvvcXB9hYg/LhoUdVLga3Ttf9CI2ktVGKo4CdbjxmU/B+PNOAwE25043s9E
+kQgokQwUIzlUhGSweBl+y+ZUQb6vsT/fdwYH6QbcqqEQGP26LutuEK7H0faIw3KkFXxICX5ECYQJ
+o7ptqYI8T31wr9eBfT4H9NfseBJegl4QRVlLaO3hsBK9CoyrCKWEEvBv1DtSBbKuur493gYICEWv
+J6dXKm//kjXtHPzBGJKRBlEuBT9GbhJVb00V5NL2Vll3PdZQP3ViILKIZi+HJvcSPIEYJibvp21P
+hBSzKVmIzGvLy+2yr+Z66rDG4d6zaBnuxJWgD00PW5AYq1iXMU4eM0Q1i/rPZHdYnTlElHad3oAd
+0rtWRF7o0uREiBrDlGWLqIqBZJO00+qS0nZkE1Egi7bBQRvAj5dvkBXv+AmlTLR+T1aH1ZLttkZ3
+01Zkumrw+ZVmWRBXR6jYSohqw5R8uzj67+ykjbuOtasKPvafOsSF5DnrnyYtEskPM43KINSheKEA
+AAAASUVORK5CYII=
+			</icon>
+		</appfolder>
 		<basepath>
 		</basepath>
 	</rootfolder>
 	<variables>
+		<var
+		id="37c2a87c-1e01-4b80-bf95-1938c85fc951"
+		name="tagMainAccount">
+		</var>
+		<var
+		id="d89fee72-25f6-470e-8778-d6f2526d3bda"
+		name="tagCostCenter">
+		</var>
+		<var
+		id="4620574e-041f-42b9-acc6-c1afee8437f1"
+		name="tagChannel">
+		</var>
+		<var
+		id="3f1a8a86-5cb2-4735-808e-ca50dde1f1a1"
+		name="tagBrandHouse">
+		</var>
+		<var
+		id="11137edc-c841-4c67-89a6-6fe98842523d"
+		name="tagBrand">
+		</var>
+		<var
+		id="b44b033b-2376-4034-99c4-b007e6455eb4"
+		name="tagSubBrand">
+		</var>
+		<var
+		id="cace9fd9-01be-4fd4-b8d7-f2d9d0d9c67a"
+		name="tagTradinkMarket">
+		</var>
+		<var
+		id="9206a7bf-339d-421e-85c5-67b2664fbcbc"
+		name="tagFunctionalArea">
+		</var>
 	</variables>
 </repository>

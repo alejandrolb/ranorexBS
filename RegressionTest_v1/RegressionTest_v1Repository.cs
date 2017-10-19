@@ -22,12 +22,15 @@ namespace RegressionTest_v1
     /// <summary>
     /// The class representing the RegressionTest_v1Repository element repository.
     /// </summary>
-    [System.CodeDom.Compiler.GeneratedCode("Ranorex", "7.1")]
+    [System.CodeDom.Compiler.GeneratedCode("Ranorex", "7.2")]
     [RepositoryFolder("884d9529-5e9e-4eae-bbdb-1b98d9ece18a")]
     public partial class RegressionTest_v1Repository : RepoGenBaseFolder
     {
         static RegressionTest_v1Repository instance = new RegressionTest_v1Repository();
         RegressionTest_v1RepositoryFolders.DashboardFinanceAndOperationsAppFolder _dashboardfinanceandoperations;
+        RegressionTest_v1RepositoryFolders.DimensionFieldsFolder _dimensionfields;
+        RegressionTest_v1RepositoryFolders.DimensionTagsFolder _dimensiontags;
+        RegressionTest_v1RepositoryFolders.GoogleChromeClosedAppFolder _googlechromeclosed;
 
         /// <summary>
         /// Gets the singleton class instance representing the RegressionTest_v1Repository element repository.
@@ -45,9 +48,108 @@ namespace RegressionTest_v1
             : base("RegressionTest_v1Repository", "/", null, 0, false, "884d9529-5e9e-4eae-bbdb-1b98d9ece18a", ".\\RepositoryImages\\RegressionTest_v1Repository884d9529.rximgres")
         {
             _dashboardfinanceandoperations = new RegressionTest_v1RepositoryFolders.DashboardFinanceAndOperationsAppFolder(this);
+            _dimensionfields = new RegressionTest_v1RepositoryFolders.DimensionFieldsFolder(this);
+            _dimensiontags = new RegressionTest_v1RepositoryFolders.DimensionTagsFolder(this);
+            _googlechromeclosed = new RegressionTest_v1RepositoryFolders.GoogleChromeClosedAppFolder(this);
         }
 
 #region Variables
+
+        string _tagMainAccount = "";
+
+        /// <summary>
+        /// Gets or sets the value of variable tagMainAccount.
+        /// </summary>
+        [TestVariable("37c2a87c-1e01-4b80-bf95-1938c85fc951")]
+        public string tagMainAccount
+        {
+            get { return _tagMainAccount; }
+            set { _tagMainAccount = value; }
+        }
+
+        string _tagCostCenter = "";
+
+        /// <summary>
+        /// Gets or sets the value of variable tagCostCenter.
+        /// </summary>
+        [TestVariable("d89fee72-25f6-470e-8778-d6f2526d3bda")]
+        public string tagCostCenter
+        {
+            get { return _tagCostCenter; }
+            set { _tagCostCenter = value; }
+        }
+
+        string _tagChannel = "";
+
+        /// <summary>
+        /// Gets or sets the value of variable tagChannel.
+        /// </summary>
+        [TestVariable("4620574e-041f-42b9-acc6-c1afee8437f1")]
+        public string tagChannel
+        {
+            get { return _tagChannel; }
+            set { _tagChannel = value; }
+        }
+
+        string _tagBrandHouse = "";
+
+        /// <summary>
+        /// Gets or sets the value of variable tagBrandHouse.
+        /// </summary>
+        [TestVariable("3f1a8a86-5cb2-4735-808e-ca50dde1f1a1")]
+        public string tagBrandHouse
+        {
+            get { return _tagBrandHouse; }
+            set { _tagBrandHouse = value; }
+        }
+
+        string _tagBrand = "";
+
+        /// <summary>
+        /// Gets or sets the value of variable tagBrand.
+        /// </summary>
+        [TestVariable("11137edc-c841-4c67-89a6-6fe98842523d")]
+        public string tagBrand
+        {
+            get { return _tagBrand; }
+            set { _tagBrand = value; }
+        }
+
+        string _tagSubBrand = "";
+
+        /// <summary>
+        /// Gets or sets the value of variable tagSubBrand.
+        /// </summary>
+        [TestVariable("b44b033b-2376-4034-99c4-b007e6455eb4")]
+        public string tagSubBrand
+        {
+            get { return _tagSubBrand; }
+            set { _tagSubBrand = value; }
+        }
+
+        string _tagTradinkMarket = "";
+
+        /// <summary>
+        /// Gets or sets the value of variable tagTradinkMarket.
+        /// </summary>
+        [TestVariable("cace9fd9-01be-4fd4-b8d7-f2d9d0d9c67a")]
+        public string tagTradinkMarket
+        {
+            get { return _tagTradinkMarket; }
+            set { _tagTradinkMarket = value; }
+        }
+
+        string _tagFunctionalArea = "";
+
+        /// <summary>
+        /// Gets or sets the value of variable tagFunctionalArea.
+        /// </summary>
+        [TestVariable("9206a7bf-339d-421e-85c5-67b2664fbcbc")]
+        public string tagFunctionalArea
+        {
+            get { return _tagFunctionalArea; }
+            set { _tagFunctionalArea = value; }
+        }
 
 #endregion
 
@@ -71,12 +173,39 @@ namespace RegressionTest_v1
         {
             get { return _dashboardfinanceandoperations; }
         }
+
+        /// <summary>
+        /// The DimensionFields folder.
+        /// </summary>
+        [RepositoryFolder("25ac1ebc-c6e6-4845-8f4e-e39f46fa57bf")]
+        public virtual RegressionTest_v1RepositoryFolders.DimensionFieldsFolder DimensionFields
+        {
+            get { return _dimensionfields; }
+        }
+
+        /// <summary>
+        /// The DimensionTags folder.
+        /// </summary>
+        [RepositoryFolder("c5d33967-fe53-46da-ae05-bda2c7ae8bbc")]
+        public virtual RegressionTest_v1RepositoryFolders.DimensionTagsFolder DimensionTags
+        {
+            get { return _dimensiontags; }
+        }
+
+        /// <summary>
+        /// The GoogleChromeClosed folder.
+        /// </summary>
+        [RepositoryFolder("c503158c-079e-414f-9740-302f336719a1")]
+        public virtual RegressionTest_v1RepositoryFolders.GoogleChromeClosedAppFolder GoogleChromeClosed
+        {
+            get { return _googlechromeclosed; }
+        }
     }
 
     /// <summary>
     /// Inner folder classes.
     /// </summary>
-    [System.CodeDom.Compiler.GeneratedCode("Ranorex", "7.1")]
+    [System.CodeDom.Compiler.GeneratedCode("Ranorex", "7.2")]
     public partial class RegressionTest_v1RepositoryFolders
     {
         /// <summary>
@@ -89,17 +218,23 @@ namespace RegressionTest_v1
             RepoItemInfo _generaljournalsInfo;
             RepoItemInfo _clicknewbuttonInfo;
             RepoItemInfo _clickgeneratedlineInfo;
+            RepoItemInfo _clickaccountInfo;
+            RepoItemInfo _addnewlineInfo;
+            RepoItemInfo _lookupbuttonInfo;
 
             /// <summary>
             /// Creates a new DashboardFinanceAndOperations  folder.
             /// </summary>
             public DashboardFinanceAndOperationsAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("DashboardFinanceAndOperations", "/dom[8]", parentFolder, 30000, null, false, "be0234f2-9cd6-45e1-8197-580f1e1ad21e", "")
+                    base("DashboardFinanceAndOperations", "/dom[@domain='bestseller-test01.sandbox.operations.dynamics.com']", parentFolder, 30000, null, false, "be0234f2-9cd6-45e1-8197-580f1e1ad21e", "")
             {
-                _generalledgerInfo = new RepoItemInfo(this, "GeneralLedger", ".//div[#'mainPane']/div[3]//a[@innertext='General ledger']", 30000, null, "3d84d0b1-d05d-473f-8cf2-4f5ce3e06643");
-                _generaljournalsInfo = new RepoItemInfo(this, "GeneralJournals", ".//div[#'mainPane']/div[3]/div/div[2]/div/div/div[4]/a[@innertext='General journals']", 30000, null, "7e76c4e3-ac3d-4e46-9630-a23934fb8fff");
-                _clicknewbuttonInfo = new RepoItemInfo(this, "ClickNewButton", ".//span[#'ledgerjournaltable3_2_SystemDefinedNewButton_label']", 30000, null, "4d9d17a1-9a55-4266-9831-6f6a24b7a084");
-                _clickgeneratedlineInfo = new RepoItemInfo(this, "ClickGeneratedLine", ".//input[#'ledgerjournaltable3_2_LedgerJournalTable_JournalNum_input']", 30000, null, "65f9d71b-0610-4821-8a1e-244b454632ce");
+                _generalledgerInfo = new RepoItemInfo(this, "generalLedger", ".//div[#'mainPane']/div[3]//a[@innertext='General ledger']", 30000, null, "3d84d0b1-d05d-473f-8cf2-4f5ce3e06643");
+                _generaljournalsInfo = new RepoItemInfo(this, "generalJournals", ".//div[#'mainPane']/div[3]/div/div[2]/div/div/div[4]/a[@innertext='General journals']", 30000, null, "7e76c4e3-ac3d-4e46-9630-a23934fb8fff");
+                _clicknewbuttonInfo = new RepoItemInfo(this, "clickNewButton", ".//span[@id~'SystemDefinedNewButton_label']", 30000, null, "4d9d17a1-9a55-4266-9831-6f6a24b7a084");
+                _clickgeneratedlineInfo = new RepoItemInfo(this, "clickGeneratedLine", ".//input[@id~'LedgerJournalTable_JournalNum_input']", 30000, null, "65f9d71b-0610-4821-8a1e-244b454632ce");
+                _clickaccountInfo = new RepoItemInfo(this, "clickAccount", ".//input[@id~'LedgerJournalTrans_AccountNum_input']", 30000, null, "4371e9c6-39ae-4c8e-9c5a-615c44433b35");
+                _addnewlineInfo = new RepoItemInfo(this, "addNewLine", ".//span[@id~'NewLine_label']", 30000, null, "c41068b9-f80d-448c-b904-45e410ea3df6");
+                _lookupbuttonInfo = new RepoItemInfo(this, "LookupButton", ".//div[@id~'LedgerJournalTrans_AccountNum']/?/?/div", 30000, null, "dbac73c6-5e1e-4d98-b227-7f62682a04fe");
             }
 
             /// <summary>
@@ -127,10 +262,10 @@ namespace RegressionTest_v1
             }
 
             /// <summary>
-            /// The GeneralLedger item.
+            /// The generalLedger item.
             /// </summary>
             [RepositoryItem("3d84d0b1-d05d-473f-8cf2-4f5ce3e06643")]
-            public virtual Ranorex.ATag GeneralLedger
+            public virtual Ranorex.ATag generalLedger
             {
                 get
                 {
@@ -139,10 +274,10 @@ namespace RegressionTest_v1
             }
 
             /// <summary>
-            /// The GeneralLedger item info.
+            /// The generalLedger item info.
             /// </summary>
             [RepositoryItemInfo("3d84d0b1-d05d-473f-8cf2-4f5ce3e06643")]
-            public virtual RepoItemInfo GeneralLedgerInfo
+            public virtual RepoItemInfo generalLedgerInfo
             {
                 get
                 {
@@ -151,10 +286,10 @@ namespace RegressionTest_v1
             }
 
             /// <summary>
-            /// The GeneralJournals item.
+            /// The generalJournals item.
             /// </summary>
             [RepositoryItem("7e76c4e3-ac3d-4e46-9630-a23934fb8fff")]
-            public virtual Ranorex.ATag GeneralJournals
+            public virtual Ranorex.ATag generalJournals
             {
                 get
                 {
@@ -163,10 +298,10 @@ namespace RegressionTest_v1
             }
 
             /// <summary>
-            /// The GeneralJournals item info.
+            /// The generalJournals item info.
             /// </summary>
             [RepositoryItemInfo("7e76c4e3-ac3d-4e46-9630-a23934fb8fff")]
-            public virtual RepoItemInfo GeneralJournalsInfo
+            public virtual RepoItemInfo generalJournalsInfo
             {
                 get
                 {
@@ -175,10 +310,10 @@ namespace RegressionTest_v1
             }
 
             /// <summary>
-            /// The ClickNewButton item.
+            /// The clickNewButton item.
             /// </summary>
             [RepositoryItem("4d9d17a1-9a55-4266-9831-6f6a24b7a084")]
-            public virtual Ranorex.SpanTag ClickNewButton
+            public virtual Ranorex.SpanTag clickNewButton
             {
                 get
                 {
@@ -187,10 +322,10 @@ namespace RegressionTest_v1
             }
 
             /// <summary>
-            /// The ClickNewButton item info.
+            /// The clickNewButton item info.
             /// </summary>
             [RepositoryItemInfo("4d9d17a1-9a55-4266-9831-6f6a24b7a084")]
-            public virtual RepoItemInfo ClickNewButtonInfo
+            public virtual RepoItemInfo clickNewButtonInfo
             {
                 get
                 {
@@ -199,10 +334,10 @@ namespace RegressionTest_v1
             }
 
             /// <summary>
-            /// The ClickGeneratedLine item.
+            /// The clickGeneratedLine item.
             /// </summary>
             [RepositoryItem("65f9d71b-0610-4821-8a1e-244b454632ce")]
-            public virtual Ranorex.InputTag ClickGeneratedLine
+            public virtual Ranorex.InputTag clickGeneratedLine
             {
                 get
                 {
@@ -211,14 +346,624 @@ namespace RegressionTest_v1
             }
 
             /// <summary>
-            /// The ClickGeneratedLine item info.
+            /// The clickGeneratedLine item info.
             /// </summary>
             [RepositoryItemInfo("65f9d71b-0610-4821-8a1e-244b454632ce")]
-            public virtual RepoItemInfo ClickGeneratedLineInfo
+            public virtual RepoItemInfo clickGeneratedLineInfo
             {
                 get
                 {
                     return _clickgeneratedlineInfo;
+                }
+            }
+
+            /// <summary>
+            /// The clickAccount item.
+            /// </summary>
+            [RepositoryItem("4371e9c6-39ae-4c8e-9c5a-615c44433b35")]
+            public virtual Ranorex.InputTag clickAccount
+            {
+                get
+                {
+                    return _clickaccountInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The clickAccount item info.
+            /// </summary>
+            [RepositoryItemInfo("4371e9c6-39ae-4c8e-9c5a-615c44433b35")]
+            public virtual RepoItemInfo clickAccountInfo
+            {
+                get
+                {
+                    return _clickaccountInfo;
+                }
+            }
+
+            /// <summary>
+            /// The addNewLine item.
+            /// </summary>
+            [RepositoryItem("c41068b9-f80d-448c-b904-45e410ea3df6")]
+            public virtual Ranorex.SpanTag addNewLine
+            {
+                get
+                {
+                    return _addnewlineInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The addNewLine item info.
+            /// </summary>
+            [RepositoryItemInfo("c41068b9-f80d-448c-b904-45e410ea3df6")]
+            public virtual RepoItemInfo addNewLineInfo
+            {
+                get
+                {
+                    return _addnewlineInfo;
+                }
+            }
+
+            /// <summary>
+            /// The LookupButton item.
+            /// </summary>
+            [RepositoryItem("dbac73c6-5e1e-4d98-b227-7f62682a04fe")]
+            public virtual Ranorex.DivTag LookupButton
+            {
+                get
+                {
+                    return _lookupbuttonInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The LookupButton item info.
+            /// </summary>
+            [RepositoryItemInfo("dbac73c6-5e1e-4d98-b227-7f62682a04fe")]
+            public virtual RepoItemInfo LookupButtonInfo
+            {
+                get
+                {
+                    return _lookupbuttonInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The DimensionFieldsFolder folder.
+        /// </summary>
+        [RepositoryFolder("25ac1ebc-c6e6-4845-8f4e-e39f46fa57bf")]
+        public partial class DimensionFieldsFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _clickmainaccountInfo;
+            RepoItemInfo _clickcostcenterInfo;
+            RepoItemInfo _clickchannelInfo;
+            RepoItemInfo _clickbrandhouseInfo;
+            RepoItemInfo _clickbrandInfo;
+            RepoItemInfo _clicksubbrandInfo;
+            RepoItemInfo _clicktradingmarketInfo;
+            RepoItemInfo _clickfunctionalareaInfo;
+
+            /// <summary>
+            /// Creates a new DimensionFields  folder.
+            /// </summary>
+            public DimensionFieldsFolder(RepoGenBaseFolder parentFolder) :
+                    base("DimensionFields", "", parentFolder, 0, null, false, "25ac1ebc-c6e6-4845-8f4e-e39f46fa57bf", "")
+            {
+                _clickmainaccountInfo = new RepoItemInfo(this, "ClickMainAccount", "/dom[@domain='bestseller-test01.sandbox.operations.dynamics.com']//label[@innertext='MainAccount']", 30000, null, "a43229fa-d93e-47cc-9441-91e39c5fe8ab");
+                _clickcostcenterInfo = new RepoItemInfo(this, "clickCostCenter", "/dom[@domain='bestseller-test01.sandbox.operations.dynamics.com']//label[@innertext='CostCenter']", 30000, null, "825812c8-473b-45e1-a730-8f240893b18b");
+                _clickchannelInfo = new RepoItemInfo(this, "clickChannel", "/dom[@domain='bestseller-test01.sandbox.operations.dynamics.com']//label[@innertext='Channel']", 30000, null, "9c6e4ddd-1d3e-444f-af62-7e967807cbee");
+                _clickbrandhouseInfo = new RepoItemInfo(this, "clickBrandHouse", "/dom[@domain='bestseller-test01.sandbox.operations.dynamics.com']//label[@innertext='BrandHouse']", 30000, null, "cc69c8d0-2d63-4f2f-8382-72631682e6dc");
+                _clickbrandInfo = new RepoItemInfo(this, "clickBrand", "/dom[@domain='bestseller-test01.sandbox.operations.dynamics.com']//label[@innertext='Brand']", 30000, null, "2b89408a-06a3-4566-929c-0a6bcf891819");
+                _clicksubbrandInfo = new RepoItemInfo(this, "clickSubBrand", "/dom[@domain='bestseller-test01.sandbox.operations.dynamics.com']//label[@innertext='SubBrand']", 30000, null, "9b398ef6-40c8-43e4-bb01-bba8c702b093");
+                _clicktradingmarketInfo = new RepoItemInfo(this, "clickTradingMarket", "/dom[@domain='bestseller-test01.sandbox.operations.dynamics.com']//label[@innertext='TradingMarket']", 30000, null, "1afce465-d3da-4305-9fbf-9b37c4b4b306");
+                _clickfunctionalareaInfo = new RepoItemInfo(this, "clickFunctionalArea", "/dom[@domain='bestseller-test01.sandbox.operations.dynamics.com']//label[@innertext='FunctionalArea']", 30000, null, "2ced6698-d230-4773-a589-be6aac098549");
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("25ac1ebc-c6e6-4845-8f4e-e39f46fa57bf")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ClickMainAccount item.
+            /// </summary>
+            [RepositoryItem("a43229fa-d93e-47cc-9441-91e39c5fe8ab")]
+            public virtual Ranorex.LabelTag ClickMainAccount
+            {
+                get
+                {
+                    return _clickmainaccountInfo.CreateAdapter<Ranorex.LabelTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ClickMainAccount item info.
+            /// </summary>
+            [RepositoryItemInfo("a43229fa-d93e-47cc-9441-91e39c5fe8ab")]
+            public virtual RepoItemInfo ClickMainAccountInfo
+            {
+                get
+                {
+                    return _clickmainaccountInfo;
+                }
+            }
+
+            /// <summary>
+            /// The clickCostCenter item.
+            /// </summary>
+            [RepositoryItem("825812c8-473b-45e1-a730-8f240893b18b")]
+            public virtual Ranorex.LabelTag clickCostCenter
+            {
+                get
+                {
+                    return _clickcostcenterInfo.CreateAdapter<Ranorex.LabelTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The clickCostCenter item info.
+            /// </summary>
+            [RepositoryItemInfo("825812c8-473b-45e1-a730-8f240893b18b")]
+            public virtual RepoItemInfo clickCostCenterInfo
+            {
+                get
+                {
+                    return _clickcostcenterInfo;
+                }
+            }
+
+            /// <summary>
+            /// The clickChannel item.
+            /// </summary>
+            [RepositoryItem("9c6e4ddd-1d3e-444f-af62-7e967807cbee")]
+            public virtual Ranorex.LabelTag clickChannel
+            {
+                get
+                {
+                    return _clickchannelInfo.CreateAdapter<Ranorex.LabelTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The clickChannel item info.
+            /// </summary>
+            [RepositoryItemInfo("9c6e4ddd-1d3e-444f-af62-7e967807cbee")]
+            public virtual RepoItemInfo clickChannelInfo
+            {
+                get
+                {
+                    return _clickchannelInfo;
+                }
+            }
+
+            /// <summary>
+            /// The clickBrandHouse item.
+            /// </summary>
+            [RepositoryItem("cc69c8d0-2d63-4f2f-8382-72631682e6dc")]
+            public virtual Ranorex.LabelTag clickBrandHouse
+            {
+                get
+                {
+                    return _clickbrandhouseInfo.CreateAdapter<Ranorex.LabelTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The clickBrandHouse item info.
+            /// </summary>
+            [RepositoryItemInfo("cc69c8d0-2d63-4f2f-8382-72631682e6dc")]
+            public virtual RepoItemInfo clickBrandHouseInfo
+            {
+                get
+                {
+                    return _clickbrandhouseInfo;
+                }
+            }
+
+            /// <summary>
+            /// The clickBrand item.
+            /// </summary>
+            [RepositoryItem("2b89408a-06a3-4566-929c-0a6bcf891819")]
+            public virtual Ranorex.LabelTag clickBrand
+            {
+                get
+                {
+                    return _clickbrandInfo.CreateAdapter<Ranorex.LabelTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The clickBrand item info.
+            /// </summary>
+            [RepositoryItemInfo("2b89408a-06a3-4566-929c-0a6bcf891819")]
+            public virtual RepoItemInfo clickBrandInfo
+            {
+                get
+                {
+                    return _clickbrandInfo;
+                }
+            }
+
+            /// <summary>
+            /// The clickSubBrand item.
+            /// </summary>
+            [RepositoryItem("9b398ef6-40c8-43e4-bb01-bba8c702b093")]
+            public virtual Ranorex.LabelTag clickSubBrand
+            {
+                get
+                {
+                    return _clicksubbrandInfo.CreateAdapter<Ranorex.LabelTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The clickSubBrand item info.
+            /// </summary>
+            [RepositoryItemInfo("9b398ef6-40c8-43e4-bb01-bba8c702b093")]
+            public virtual RepoItemInfo clickSubBrandInfo
+            {
+                get
+                {
+                    return _clicksubbrandInfo;
+                }
+            }
+
+            /// <summary>
+            /// The clickTradingMarket item.
+            /// </summary>
+            [RepositoryItem("1afce465-d3da-4305-9fbf-9b37c4b4b306")]
+            public virtual Ranorex.LabelTag clickTradingMarket
+            {
+                get
+                {
+                    return _clicktradingmarketInfo.CreateAdapter<Ranorex.LabelTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The clickTradingMarket item info.
+            /// </summary>
+            [RepositoryItemInfo("1afce465-d3da-4305-9fbf-9b37c4b4b306")]
+            public virtual RepoItemInfo clickTradingMarketInfo
+            {
+                get
+                {
+                    return _clicktradingmarketInfo;
+                }
+            }
+
+            /// <summary>
+            /// The clickFunctionalArea item.
+            /// </summary>
+            [RepositoryItem("2ced6698-d230-4773-a589-be6aac098549")]
+            public virtual Ranorex.LabelTag clickFunctionalArea
+            {
+                get
+                {
+                    return _clickfunctionalareaInfo.CreateAdapter<Ranorex.LabelTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The clickFunctionalArea item info.
+            /// </summary>
+            [RepositoryItemInfo("2ced6698-d230-4773-a589-be6aac098549")]
+            public virtual RepoItemInfo clickFunctionalAreaInfo
+            {
+                get
+                {
+                    return _clickfunctionalareaInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The DimensionTagsFolder folder.
+        /// </summary>
+        [RepositoryFolder("c5d33967-fe53-46da-ae05-bda2c7ae8bbc")]
+        public partial class DimensionTagsFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _tagmainaccountInfo;
+            RepoItemInfo _tagcostcenterInfo;
+            RepoItemInfo _tagchannelInfo;
+            RepoItemInfo _tagbrandhouseInfo;
+            RepoItemInfo _tagbrandInfo;
+            RepoItemInfo _tagsubbrandInfo;
+            RepoItemInfo _tagtradingmarketInfo;
+            RepoItemInfo _tagfunctionalareaInfo;
+
+            /// <summary>
+            /// Creates a new DimensionTags  folder.
+            /// </summary>
+            public DimensionTagsFolder(RepoGenBaseFolder parentFolder) :
+                    base("DimensionTags", "", parentFolder, 0, null, false, "c5d33967-fe53-46da-ae05-bda2c7ae8bbc", "")
+            {
+                _tagmainaccountInfo = new RepoItemInfo(this, "tagMainAccount", "/dom[@domain='bestseller-test01.sandbox.operations.dynamics.com']//input[@tagvalue=$tagMainAccount]", 30000, null, "22e6ce27-bd56-42f9-80b0-b77b2084e6ca");
+                _tagcostcenterInfo = new RepoItemInfo(this, "tagCostCenter", "/dom[@domain='bestseller-test01.sandbox.operations.dynamics.com']//input[@tagvalue=$tagCostCenter]", 30000, null, "03439e6d-6579-4ef7-a1ce-9f8a53d416dd");
+                _tagchannelInfo = new RepoItemInfo(this, "tagChannel", "/dom[@domain='bestseller-test01.sandbox.operations.dynamics.com']//input[@tagvalue=$tagChannel]", 30000, null, "9e987755-92a3-4c99-bf52-b98f3b7b4faa");
+                _tagbrandhouseInfo = new RepoItemInfo(this, "tagBrandHouse", "/dom[@domain='bestseller-test01.sandbox.operations.dynamics.com']//input[@tagvalue=$tagBrandHouse]", 30000, null, "32e08f68-7924-49e2-96c8-a96fbd85d0bb");
+                _tagbrandInfo = new RepoItemInfo(this, "tagBrand", "/dom[@domain='bestseller-test01.sandbox.operations.dynamics.com']//input[@tagvalue=$tagBrand]", 30000, null, "ec68672a-7298-4f8b-8ce8-01cfbecb1412");
+                _tagsubbrandInfo = new RepoItemInfo(this, "tagSubBrand", "/dom[@domain='bestseller-test01.sandbox.operations.dynamics.com']//input[@tagvalue=$tagSubBrand]", 30000, null, "978bdb6f-c3e0-4a09-90f3-1a63d2c96a06");
+                _tagtradingmarketInfo = new RepoItemInfo(this, "tagTradingMarket", "/dom[@domain='bestseller-test01.sandbox.operations.dynamics.com']//input[@tagvalue=$tagTradinkMarket]", 30000, null, "fa647514-f4bc-4c6b-8909-72e44be88582");
+                _tagfunctionalareaInfo = new RepoItemInfo(this, "tagFunctionalArea", "/dom[@domain='bestseller-test01.sandbox.operations.dynamics.com']//input[@tagvalue=$tagFunctionalArea]", 30000, null, "b525f02b-c0a5-48e6-9fe6-361f4727ce35");
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("c5d33967-fe53-46da-ae05-bda2c7ae8bbc")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The tagMainAccount item.
+            /// </summary>
+            [RepositoryItem("22e6ce27-bd56-42f9-80b0-b77b2084e6ca")]
+            public virtual Ranorex.InputTag tagMainAccount
+            {
+                get
+                {
+                    return _tagmainaccountInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The tagMainAccount item info.
+            /// </summary>
+            [RepositoryItemInfo("22e6ce27-bd56-42f9-80b0-b77b2084e6ca")]
+            public virtual RepoItemInfo tagMainAccountInfo
+            {
+                get
+                {
+                    return _tagmainaccountInfo;
+                }
+            }
+
+            /// <summary>
+            /// The tagCostCenter item.
+            /// </summary>
+            [RepositoryItem("03439e6d-6579-4ef7-a1ce-9f8a53d416dd")]
+            public virtual Ranorex.InputTag tagCostCenter
+            {
+                get
+                {
+                    return _tagcostcenterInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The tagCostCenter item info.
+            /// </summary>
+            [RepositoryItemInfo("03439e6d-6579-4ef7-a1ce-9f8a53d416dd")]
+            public virtual RepoItemInfo tagCostCenterInfo
+            {
+                get
+                {
+                    return _tagcostcenterInfo;
+                }
+            }
+
+            /// <summary>
+            /// The tagChannel item.
+            /// </summary>
+            [RepositoryItem("9e987755-92a3-4c99-bf52-b98f3b7b4faa")]
+            public virtual Ranorex.InputTag tagChannel
+            {
+                get
+                {
+                    return _tagchannelInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The tagChannel item info.
+            /// </summary>
+            [RepositoryItemInfo("9e987755-92a3-4c99-bf52-b98f3b7b4faa")]
+            public virtual RepoItemInfo tagChannelInfo
+            {
+                get
+                {
+                    return _tagchannelInfo;
+                }
+            }
+
+            /// <summary>
+            /// The tagBrandHouse item.
+            /// </summary>
+            [RepositoryItem("32e08f68-7924-49e2-96c8-a96fbd85d0bb")]
+            public virtual Ranorex.InputTag tagBrandHouse
+            {
+                get
+                {
+                    return _tagbrandhouseInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The tagBrandHouse item info.
+            /// </summary>
+            [RepositoryItemInfo("32e08f68-7924-49e2-96c8-a96fbd85d0bb")]
+            public virtual RepoItemInfo tagBrandHouseInfo
+            {
+                get
+                {
+                    return _tagbrandhouseInfo;
+                }
+            }
+
+            /// <summary>
+            /// The tagBrand item.
+            /// </summary>
+            [RepositoryItem("ec68672a-7298-4f8b-8ce8-01cfbecb1412")]
+            public virtual Ranorex.InputTag tagBrand
+            {
+                get
+                {
+                    return _tagbrandInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The tagBrand item info.
+            /// </summary>
+            [RepositoryItemInfo("ec68672a-7298-4f8b-8ce8-01cfbecb1412")]
+            public virtual RepoItemInfo tagBrandInfo
+            {
+                get
+                {
+                    return _tagbrandInfo;
+                }
+            }
+
+            /// <summary>
+            /// The tagSubBrand item.
+            /// </summary>
+            [RepositoryItem("978bdb6f-c3e0-4a09-90f3-1a63d2c96a06")]
+            public virtual Ranorex.InputTag tagSubBrand
+            {
+                get
+                {
+                    return _tagsubbrandInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The tagSubBrand item info.
+            /// </summary>
+            [RepositoryItemInfo("978bdb6f-c3e0-4a09-90f3-1a63d2c96a06")]
+            public virtual RepoItemInfo tagSubBrandInfo
+            {
+                get
+                {
+                    return _tagsubbrandInfo;
+                }
+            }
+
+            /// <summary>
+            /// The tagTradingMarket item.
+            /// </summary>
+            [RepositoryItem("fa647514-f4bc-4c6b-8909-72e44be88582")]
+            public virtual Ranorex.InputTag tagTradingMarket
+            {
+                get
+                {
+                    return _tagtradingmarketInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The tagTradingMarket item info.
+            /// </summary>
+            [RepositoryItemInfo("fa647514-f4bc-4c6b-8909-72e44be88582")]
+            public virtual RepoItemInfo tagTradingMarketInfo
+            {
+                get
+                {
+                    return _tagtradingmarketInfo;
+                }
+            }
+
+            /// <summary>
+            /// The tagFunctionalArea item.
+            /// </summary>
+            [RepositoryItem("b525f02b-c0a5-48e6-9fe6-361f4727ce35")]
+            public virtual Ranorex.InputTag tagFunctionalArea
+            {
+                get
+                {
+                    return _tagfunctionalareaInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The tagFunctionalArea item info.
+            /// </summary>
+            [RepositoryItemInfo("b525f02b-c0a5-48e6-9fe6-361f4727ce35")]
+            public virtual RepoItemInfo tagFunctionalAreaInfo
+            {
+                get
+                {
+                    return _tagfunctionalareaInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The GoogleChromeClosedAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("c503158c-079e-414f-9740-302f336719a1")]
+        public partial class GoogleChromeClosedAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _clientInfo;
+
+            /// <summary>
+            /// Creates a new GoogleChromeClosed  folder.
+            /// </summary>
+            public GoogleChromeClosedAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("GoogleChromeClosed", "/form[@title='New Tab - Google Chrome']", parentFolder, 30000, null, true, "c503158c-079e-414f-9740-302f336719a1", "")
+            {
+                _clientInfo = new RepoItemInfo(this, "Client", "container[@accessiblename='Google Chrome']/container[2]/container[2]", 30000, null, "a08dec6f-3568-4b7e-b999-635b40c7d3e1");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("c503158c-079e-414f-9740-302f336719a1")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("c503158c-079e-414f-9740-302f336719a1")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Client item.
+            /// </summary>
+            [RepositoryItem("a08dec6f-3568-4b7e-b999-635b40c7d3e1")]
+            public virtual Ranorex.Container Client
+            {
+                get
+                {
+                    return _clientInfo.CreateAdapter<Ranorex.Container>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Client item info.
+            /// </summary>
+            [RepositoryItemInfo("a08dec6f-3568-4b7e-b999-635b40c7d3e1")]
+            public virtual RepoItemInfo ClientInfo
+            {
+                get
+                {
+                    return _clientInfo;
                 }
             }
         }

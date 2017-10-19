@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="09081a52-90d8-46d2-ad84-2bdd8a869efe"
+id="8a41319c-4881-4d16-8407-2ef3bd9b88eb"
 mode="Global"
 rxversion="7.2">
 	<name>
-		OpenBrowser
+		validateLines
 	</name>
 	<repeatcount>
 		1
@@ -23,30 +23,22 @@ rxversion="7.2">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="OpenBrowser"
+	classname="validateLines"
 	namespace="RegressionTest_v1">
 	</codegen>
 	<variables>
+		<var
+		id="d3fc8bdf-0fcf-4409-8e18-68975b49c54b"
+		name="channel">
+			10
+		</var>
+		<var
+		id="10973c08-5f6a-4440-afcc-da36a9e7f05f"
+		name="tagMainAccount">
+			511151000
+		</var>
 	</variables>
 	<recorditems>
-		<openwebsiterecorditem
-		args=""
-		browser="Chrome"
-		clearcache="False"
-		clearcookies="False"
-		enabled="True"
-		incognito="False"
-		killexisting="False"
-		maximized="True"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<url>
-				https://bestseller-test01.sandbox.operations.dynamics.com/?cmp=205&amp;mi=DefaultDashboard
-			</url>
-		</openwebsiterecorditem>
 	</recorditems>
 	<repository
 	id="206f722a-400b-49cd-b138-3d768ce411db"
@@ -64,7 +56,7 @@ rxversion="7.2">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		OpenBrowser.UserCode.cs
+		validateLines.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

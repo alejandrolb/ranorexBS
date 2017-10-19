@@ -24,29 +24,29 @@ namespace RegressionTest_v1
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The OpenLedgerModule recording.
+    ///The closeSUT recording.
     /// </summary>
-    [TestModule("bec48827-64c3-45b2-ac7f-d3bcd0993a92", ModuleType.Recording, 1)]
-    public partial class OpenLedgerModule : ITestModule
+    [TestModule("7f8eb0d9-8bad-4d27-b9f2-8eb8ec56f300", ModuleType.Recording, 1)]
+    public partial class closeSUT : ITestModule
     {
         /// <summary>
         /// Holds an instance of the RegressionTest_v1Repository repository.
         /// </summary>
         public static RegressionTest_v1Repository repo = RegressionTest_v1Repository.Instance;
 
-        static OpenLedgerModule instance = new OpenLedgerModule();
+        static closeSUT instance = new closeSUT();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public OpenLedgerModule()
+        public closeSUT()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static OpenLedgerModule Instance
+        public static closeSUT Instance
         {
             get { return instance; }
         }
@@ -79,16 +79,9 @@ namespace RegressionTest_v1
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 10s.", new RecordItemIndex(0));
-            Delay.Duration(10000, false);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DashboardFinanceAndOperations.generalLedger' at Center.", repo.DashboardFinanceAndOperations.generalLedgerInfo, new RecordItemIndex(1));
-            repo.DashboardFinanceAndOperations.generalLedger.Click();
-            Delay.Milliseconds(200);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DashboardFinanceAndOperations.generalJournals' at Center.", repo.DashboardFinanceAndOperations.generalJournalsInfo, new RecordItemIndex(2));
-            repo.DashboardFinanceAndOperations.generalJournals.Click();
-            Delay.Milliseconds(200);
+            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'GoogleChromeClosed.Client'.", repo.GoogleChromeClosed.ClientInfo, new RecordItemIndex(0));
+            Host.Current.CloseApplication(repo.GoogleChromeClosed.Client, 1000);
+            Delay.Milliseconds(0);
             
         }
 
